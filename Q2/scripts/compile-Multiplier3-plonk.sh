@@ -37,4 +37,8 @@ snarkjs plonk prove Multiplier3_plonk/circuit_0000.zkey witness.wtns proof.json 
 # Verify the proof
 snarkjs plonk verify Multiplier3_plonk/verification_key.json public.json proof.json
 
+# generate solidity contract
+snarkjs zkey export solidityverifier Multiplier3_plonk/circuit_0000.zkey ../Multiplier3Verifier_plonk.sol
+
+
 cd ../..
